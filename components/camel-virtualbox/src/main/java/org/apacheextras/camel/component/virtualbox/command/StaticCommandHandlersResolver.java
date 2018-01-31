@@ -21,6 +21,8 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.virtualbox.command;
 
+import java.util.Arrays;
+
 import org.apacheextras.camel.component.virtualbox.command.handlers.GetStateCommandHandler;
 import org.apacheextras.camel.component.virtualbox.command.handlers.GetVersionCommandHandler;
 import org.apacheextras.camel.component.virtualbox.command.handlers.PowerDownCommandHandler;
@@ -29,8 +31,6 @@ import org.apacheextras.camel.component.virtualbox.command.handlers.SetBiosSyste
 import org.apacheextras.camel.component.virtualbox.command.handlers.StartVmCommandHandler;
 import org.apacheextras.camel.component.virtualbox.template.ProgressListener;
 import org.apacheextras.camel.component.virtualbox.template.VirtualBoxTemplate;
-
-import java.util.Arrays;
 
 public class StaticCommandHandlersResolver implements CommandHandlersResolver {
 

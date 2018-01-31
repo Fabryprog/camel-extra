@@ -24,6 +24,7 @@ package org.apacheextras.camel.component.rcode;
 import java.net.InetAddress;
 import java.net.URI;
 import java.net.UnknownHostException;
+
 import org.apache.camel.RuntimeCamelException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

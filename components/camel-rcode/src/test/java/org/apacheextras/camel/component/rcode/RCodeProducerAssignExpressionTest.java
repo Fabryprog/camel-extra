@@ -21,6 +21,8 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.rcode;
 
+import static org.mockito.Mockito.doAnswer;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,8 +33,6 @@ import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
 import org.rosuda.REngine.REXP;
 import org.rosuda.REngine.REXPString;
-
-import static org.mockito.Mockito.doAnswer;
 
 public class RCodeProducerAssignExpressionTest extends RCodeProducerTest {
 

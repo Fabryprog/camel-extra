@@ -22,11 +22,12 @@
  */
 package org.apacheextras.camel.component.esper;
 
-import com.espertech.esper.event.map.MapEventBean;
 import java.util.List;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
@@ -36,6 +37,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+
+import com.espertech.esper.event.map.MapEventBean;
 
 public class EsperDomNodeRouteTest extends CamelTestSupport {
 

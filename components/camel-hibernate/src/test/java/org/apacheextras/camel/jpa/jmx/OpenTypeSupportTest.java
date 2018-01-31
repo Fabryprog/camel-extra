@@ -21,11 +21,11 @@
  ***************************************************************************************/
 package org.apacheextras.camel.jpa.jmx;
 
-import org.junit.Test;
+import static org.junit.Assert.fail;
 
 import javax.management.openmbean.OpenDataException;
 
-import static org.junit.Assert.fail;
+import org.junit.Test;
 
 public class OpenTypeSupportTest {
 

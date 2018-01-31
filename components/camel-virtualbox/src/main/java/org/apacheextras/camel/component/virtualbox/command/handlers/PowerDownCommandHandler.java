@@ -21,6 +21,9 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.virtualbox.command.handlers;
 
+import static org.apacheextras.camel.component.virtualbox.command.MachineAwareVirtualBoxCommand.resolveMachineId;
+import static org.apacheextras.camel.component.virtualbox.command.NoReturnValue.noValue;
+
 import org.apache.camel.Exchange;
 import org.apacheextras.camel.component.virtualbox.command.NoReturnValue;
 import org.apacheextras.camel.component.virtualbox.command.ProgressingVirtualBoxCommandHandler;
@@ -30,9 +33,6 @@ import org.apacheextras.camel.component.virtualbox.template.VirtualBoxTemplate;
 import org.virtualbox_4_2.IConsole;
 import org.virtualbox_4_2.IMachine;
 import org.virtualbox_4_2.IProgress;
-
-import static org.apacheextras.camel.component.virtualbox.command.MachineAwareVirtualBoxCommand.resolveMachineId;
-import static org.apacheextras.camel.component.virtualbox.command.NoReturnValue.noValue;
 
 public class PowerDownCommandHandler extends ProgressingVirtualBoxCommandHandler<PowerDownCommand, NoReturnValue> {
 

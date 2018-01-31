@@ -21,20 +21,20 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.hibernate;
 
+import java.lang.reflect.Method;
+import java.util.List;
+
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
+import org.apache.camel.RuntimeCamelException;
 import org.apache.camel.impl.ScheduledPollConsumer;
 import org.apache.camel.util.ObjectHelper;
-import org.apache.camel.RuntimeCamelException;
 import org.hibernate.LockMode;
 import org.hibernate.LockOptions;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.lang.reflect.Method;
-import java.util.List;
 
 public class HibernateConsumer extends ScheduledPollConsumer {
 

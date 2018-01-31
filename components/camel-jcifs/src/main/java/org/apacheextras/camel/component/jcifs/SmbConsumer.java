@@ -24,9 +24,6 @@ package org.apacheextras.camel.component.jcifs;
 import java.io.IOException;
 import java.util.List;
 
-import jcifs.smb.SmbException;
-import jcifs.smb.SmbFile;
-
 import org.apache.camel.Message;
 import org.apache.camel.Processor;
 import org.apache.camel.component.file.GenericFile;
@@ -35,6 +32,9 @@ import org.apache.camel.component.file.GenericFileEndpoint;
 import org.apache.camel.component.file.GenericFileOperations;
 import org.apache.camel.util.FileUtil;
 import org.apache.camel.util.ObjectHelper;
+
+import jcifs.smb.SmbException;
+import jcifs.smb.SmbFile;
 
 public class SmbConsumer extends GenericFileConsumer<SmbFile> {
 

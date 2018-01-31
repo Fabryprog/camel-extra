@@ -23,6 +23,7 @@ package org.apacheextras.camel.component.exist;
 
 import java.util.Map;
 
+import org.apache.camel.CamelContext;
 import org.apache.camel.Endpoint;
 import org.apache.camel.impl.DefaultComponent;
 import org.xmldb.api.DatabaseManager;

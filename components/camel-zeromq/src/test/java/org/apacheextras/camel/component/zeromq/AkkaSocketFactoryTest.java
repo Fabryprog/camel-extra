@@ -21,11 +21,11 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.zeromq;
 
-import org.junit.Test;
-import org.zeromq.ZMQ.Socket;
-
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
+
+import org.junit.Test;
+import org.zeromq.ZMQ.Socket;
 
 public class AkkaSocketFactoryTest {
 

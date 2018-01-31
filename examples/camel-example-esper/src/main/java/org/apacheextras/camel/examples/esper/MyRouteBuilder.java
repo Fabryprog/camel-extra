@@ -23,13 +23,14 @@ package org.apacheextras.camel.examples.esper;
 
 import java.util.Map;
 
-import com.espertech.esper.client.EventBean;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.spring.Main;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.espertech.esper.client.EventBean;
 
 public class MyRouteBuilder extends RouteBuilder {
 

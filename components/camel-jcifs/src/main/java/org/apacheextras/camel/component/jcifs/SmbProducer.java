@@ -23,7 +23,6 @@ package org.apacheextras.camel.component.jcifs;
 
 import java.io.File;
 
-import jcifs.smb.SmbFile;
 import org.apache.camel.Exchange;
 import org.apache.camel.Expression;
 import org.apache.camel.ServicePoolAware;
@@ -38,6 +37,8 @@ import org.apache.camel.util.ExchangeHelper;
 import org.apache.camel.util.FileUtil;
 import org.apache.camel.util.ObjectHelper;
 import org.apache.camel.util.StringHelper;
+
+import jcifs.smb.SmbFile;
 
 public class SmbProducer extends GenericFileProducer<SmbFile> implements ServicePoolAware {
 

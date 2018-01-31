@@ -22,13 +22,11 @@
 
 package org.apacheextras.camel.component.neo4j;
 
+import static org.junit.Assert.assertTrue;
+
 import java.net.URISyntaxException;
 
-import org.apacheextras.camel.component.neo4j.Neo4jComponent;
-import org.apacheextras.camel.component.neo4j.Neo4jEndpoint;
 import org.junit.Test;
-
-import static org.junit.Assert.assertTrue;
 
 public class Neo4jEndpointTest {
 

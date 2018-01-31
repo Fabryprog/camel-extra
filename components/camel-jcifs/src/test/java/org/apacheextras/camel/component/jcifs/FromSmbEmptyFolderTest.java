@@ -27,15 +27,15 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import jcifs.smb.SmbException;
-import jcifs.smb.SmbFile;
-import jcifs.smb.SmbFileFilter;
-import jcifs.smb.SmbFilenameFilter;
-
 import org.apache.camel.EndpointInject;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
 import org.junit.Test;
+
+import jcifs.smb.SmbException;
+import jcifs.smb.SmbFile;
+import jcifs.smb.SmbFileFilter;
+import jcifs.smb.SmbFilenameFilter;
 
 /**
  * Unit test to consume from an empty smb folder Verify that we catch NPE for

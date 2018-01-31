@@ -21,7 +21,6 @@
  ***************************************************************************************/
 package org.apache.camel.component.firebase;
 
-import com.google.firebase.FirebaseApp;
 import org.apache.camel.Consumer;
 import org.apache.camel.Processor;
 import org.apache.camel.Producer;
@@ -30,6 +29,8 @@ import org.apache.camel.spi.Metadata;
 import org.apache.camel.spi.UriEndpoint;
 import org.apache.camel.spi.UriParam;
 import org.apache.camel.spi.UriPath;
+
+import com.google.firebase.FirebaseApp;
 
 /**
  * The Google Firebase component enables you to save and modify data in a Google Firebase database

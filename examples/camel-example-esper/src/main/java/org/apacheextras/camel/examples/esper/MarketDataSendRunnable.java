@@ -22,6 +22,7 @@
 package org.apacheextras.camel.examples.esper;
 
 import java.util.Random;
+
 import javax.jms.Connection;
 import javax.jms.DeliveryMode;
 import javax.jms.Destination;

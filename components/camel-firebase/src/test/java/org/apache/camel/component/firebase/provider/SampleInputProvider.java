@@ -21,6 +21,8 @@
  ***************************************************************************************/
 package org.apache.camel.component.firebase.provider;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -29,8 +31,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Copies a test file to a folder to test routes.

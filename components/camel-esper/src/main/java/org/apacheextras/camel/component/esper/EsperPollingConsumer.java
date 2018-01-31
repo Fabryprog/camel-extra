@@ -24,12 +24,12 @@ package org.apacheextras.camel.component.esper;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.camel.Exchange;
+import org.apache.camel.impl.PollingConsumerSupport;
+
 import com.espertech.esper.client.EPStatement;
 import com.espertech.esper.client.EventBean;
 import com.espertech.esper.client.UpdateListener;
-
-import org.apache.camel.Exchange;
-import org.apache.camel.impl.PollingConsumerSupport;
 
 /**
  * @version $Revision: 1.1 $

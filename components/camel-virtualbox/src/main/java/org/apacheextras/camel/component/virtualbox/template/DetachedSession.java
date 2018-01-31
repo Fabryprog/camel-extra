@@ -21,10 +21,10 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.virtualbox.template;
 
+import static org.apacheextras.camel.component.virtualbox.template.VirtualBoxSessionUtil.closeSession;
+
 import org.virtualbox_4_2.ISession;
 import org.virtualbox_4_2.VirtualBoxManager;
-
-import static org.apacheextras.camel.component.virtualbox.template.VirtualBoxSessionUtil.closeSession;
 
 public class DetachedSession {
 

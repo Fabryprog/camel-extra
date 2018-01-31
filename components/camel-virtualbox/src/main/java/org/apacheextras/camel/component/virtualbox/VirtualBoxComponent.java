@@ -21,12 +21,13 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.virtualbox;
 
+import java.util.Map;
+
+import org.apache.camel.CamelContext;
 import org.apache.camel.impl.DefaultComponent;
 import org.apacheextras.camel.component.virtualbox.command.VirtualBoxCommandHandlersManager;
 import org.apacheextras.camel.component.virtualbox.template.VirtualBoxManagerFactory;
 import org.apacheextras.camel.component.virtualbox.template.VirtualBoxTemplate;
-
-import java.util.Map;
 
 public class VirtualBoxComponent extends DefaultComponent {
 

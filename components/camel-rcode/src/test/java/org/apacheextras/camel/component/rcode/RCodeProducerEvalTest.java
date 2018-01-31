@@ -21,6 +21,8 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.rcode;
 
+import static org.mockito.Mockito.when;
+
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
@@ -29,8 +31,6 @@ import org.junit.Test;
 import org.rosuda.REngine.REXP;
 import org.rosuda.REngine.REXPDouble;
 import org.rosuda.REngine.REXPString;
-
-import static org.mockito.Mockito.when;
 
 public class RCodeProducerEvalTest extends RCodeProducerTest {
 

@@ -21,10 +21,10 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.virtualbox.command;
 
+import static org.slf4j.LoggerFactory.getLogger;
+
 import org.apache.camel.Exchange;
 import org.slf4j.Logger;
-
-import static org.slf4j.LoggerFactory.getLogger;
 
 public abstract class MachineAwareVirtualBoxCommand<R> implements VirtualBoxCommand<R> {
 

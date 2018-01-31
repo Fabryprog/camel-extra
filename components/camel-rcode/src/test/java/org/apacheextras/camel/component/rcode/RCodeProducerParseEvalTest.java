@@ -21,14 +21,14 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.rcode;
 
+import static org.mockito.Mockito.when;
+
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
 import org.junit.Test;
 import org.rosuda.REngine.REXPDouble;
-
-import static org.mockito.Mockito.when;
 
 public class RCodeProducerParseEvalTest extends RCodeProducerTest {
 

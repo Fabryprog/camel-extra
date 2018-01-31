@@ -21,7 +21,16 @@
  ***************************************************************************************/
 package org.apache.camel.component.firebase;
 
-import com.google.firebase.database.DatabaseReference;
+import static java.util.stream.IntStream.range;
+import static junit.framework.TestCase.fail;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
+import java.net.URLEncoder;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
+
 import org.apache.camel.CamelContext;
 import org.apache.camel.Message;
 import org.apache.camel.builder.RouteBuilder;
@@ -32,15 +41,7 @@ import org.apache.camel.impl.DefaultCamelContext;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.net.URLEncoder;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReentrantLock;
-
-import static java.util.stream.IntStream.range;
-import static junit.framework.TestCase.fail;
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import com.google.firebase.database.DatabaseReference;
 
 /**
  * Tests two scenarios: a synchronous and one asynchronous request.

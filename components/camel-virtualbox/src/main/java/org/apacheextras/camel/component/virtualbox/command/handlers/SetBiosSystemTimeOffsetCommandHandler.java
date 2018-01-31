@@ -21,16 +21,16 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.virtualbox.command.handlers;
 
+import static org.apacheextras.camel.component.virtualbox.command.MachineAwareVirtualBoxCommand.resolveMachineId;
+import static org.apacheextras.camel.component.virtualbox.command.NoReturnValue.noValue;
+import static org.apacheextras.camel.component.virtualbox.command.handlers.SetBiosSystemTimeOffsetCommand.HEADER_OFFSET;
+
 import org.apache.camel.Exchange;
 import org.apacheextras.camel.component.virtualbox.command.NoReturnValue;
 import org.apacheextras.camel.component.virtualbox.command.VirtualBoxCommandHandler;
 import org.apacheextras.camel.component.virtualbox.template.MachineCallback;
 import org.apacheextras.camel.component.virtualbox.template.VirtualBoxTemplate;
 import org.virtualbox_4_2.IMachine;
-
-import static org.apacheextras.camel.component.virtualbox.command.MachineAwareVirtualBoxCommand.resolveMachineId;
-import static org.apacheextras.camel.component.virtualbox.command.NoReturnValue.noValue;
-import static org.apacheextras.camel.component.virtualbox.command.handlers.SetBiosSystemTimeOffsetCommand.HEADER_OFFSET;
 
 public class SetBiosSystemTimeOffsetCommandHandler extends VirtualBoxCommandHandler<SetBiosSystemTimeOffsetCommand, NoReturnValue> {
 

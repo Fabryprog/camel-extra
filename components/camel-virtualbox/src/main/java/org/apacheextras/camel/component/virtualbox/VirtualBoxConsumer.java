@@ -21,6 +21,11 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.virtualbox;
 
+import static org.apacheextras.camel.component.virtualbox.command.NoReturnValue.noValue;
+
+import java.util.Collections;
+import java.util.List;
+
 import org.apache.camel.Endpoint;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
@@ -35,11 +40,6 @@ import org.virtualbox_4_2.IEventListener;
 import org.virtualbox_4_2.IEventSource;
 import org.virtualbox_4_2.IMachine;
 import org.virtualbox_4_2.VBoxEventType;
-
-import java.util.Collections;
-import java.util.List;
-
-import static org.apacheextras.camel.component.virtualbox.command.NoReturnValue.noValue;
 
 public class VirtualBoxConsumer extends ScheduledPollConsumer {
 

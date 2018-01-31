@@ -21,6 +21,9 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.virtualbox.template;
 
+import static org.apacheextras.camel.component.virtualbox.template.VirtualBoxSessionUtil.acquireLockedSession;
+import static org.apacheextras.camel.component.virtualbox.template.VirtualBoxSessionUtil.closeSession;
+
 import org.virtualbox_4_2.IConsole;
 import org.virtualbox_4_2.IMachine;
 import org.virtualbox_4_2.IProgress;
@@ -28,9 +31,6 @@ import org.virtualbox_4_2.ISession;
 import org.virtualbox_4_2.IVirtualBox;
 import org.virtualbox_4_2.LockType;
 import org.virtualbox_4_2.VirtualBoxManager;
-
-import static org.apacheextras.camel.component.virtualbox.template.VirtualBoxSessionUtil.acquireLockedSession;
-import static org.apacheextras.camel.component.virtualbox.template.VirtualBoxSessionUtil.closeSession;
 
 public class VirtualBoxTemplate {
 

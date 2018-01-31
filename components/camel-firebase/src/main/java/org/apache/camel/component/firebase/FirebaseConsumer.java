@@ -21,16 +21,17 @@
  ***************************************************************************************/
 package org.apache.camel.component.firebase;
 
-import com.google.firebase.database.ChildEventListener;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.FirebaseDatabase;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.RuntimeCamelException;
 import org.apache.camel.component.firebase.data.FirebaseMessage;
 import org.apache.camel.component.firebase.data.Operation;
 import org.apache.camel.impl.DefaultConsumer;
+
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * Listens to child events of the root reference and forwards the incoming message on the route.

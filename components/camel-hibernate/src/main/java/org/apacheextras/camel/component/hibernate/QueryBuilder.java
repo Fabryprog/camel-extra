@@ -21,13 +21,13 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.hibernate;
 
-import org.hibernate.Query;
-import org.hibernate.Session;
-
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
 
 /**
  * A builder of query expressions

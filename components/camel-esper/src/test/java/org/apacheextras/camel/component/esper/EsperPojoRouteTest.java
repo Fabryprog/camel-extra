@@ -24,12 +24,13 @@ package org.apacheextras.camel.component.esper;
 
 import java.util.List;
 
-import com.espertech.esper.client.EventBean;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
 import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;
+
+import com.espertech.esper.client.EventBean;
 
 public class EsperPojoRouteTest extends CamelTestSupport {
 

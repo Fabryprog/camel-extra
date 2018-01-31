@@ -21,10 +21,10 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.virtualbox.command;
 
-import org.apache.camel.Exchange;
-
 import java.util.HashMap;
 import java.util.Map;
+
+import org.apache.camel.Exchange;
 
 public class VirtualBoxCommandHandlersManager {
 

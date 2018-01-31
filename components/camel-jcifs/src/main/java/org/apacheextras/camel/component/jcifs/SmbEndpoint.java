@@ -21,7 +21,6 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.jcifs;
 
-import jcifs.smb.SmbFile;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.component.file.GenericFile;
@@ -30,6 +29,8 @@ import org.apache.camel.component.file.GenericFileProducer;
 import org.apache.camel.impl.DefaultExchange;
 import org.apache.camel.processor.idempotent.MemoryIdempotentRepository;
 import org.apache.camel.spi.UriEndpoint;
+
+import jcifs.smb.SmbFile;
 
 @UriEndpoint(scheme = "smb", title = "SMB", syntax = "smb://user@server.example.com/sharename?password=secret&localWorkDirectory=/tmp", consumerClass = SmbConsumer.class)
 public class SmbEndpoint extends GenericFileEndpoint<SmbFile> {

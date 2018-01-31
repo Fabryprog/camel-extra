@@ -21,14 +21,14 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.rcode;
 
+import static org.mockito.Mockito.doAnswer;
+import static org.mockito.Mockito.when;
+
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
 import org.junit.Test;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
-
-import static org.mockito.Mockito.doAnswer;
-import static org.mockito.Mockito.when;
 
 public class RCodeProducerVoidEvalTest extends RCodeProducerTest {
 

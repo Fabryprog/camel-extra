@@ -21,14 +21,14 @@
  ***************************************************************************************/
 package org.apache.camel.component.firebase;
 
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.FirebaseOptions;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.UUID;
+
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
 
 /**
  * Contains the elements needed to connect to Firebase

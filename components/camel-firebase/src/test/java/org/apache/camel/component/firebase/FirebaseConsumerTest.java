@@ -22,18 +22,19 @@
 package org.apache.camel.component.firebase;
 
 
-import com.google.firebase.database.FirebaseDatabase;
+import java.io.IOException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
+
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.firebase.provider.ConfigurationProvider;
 import org.apache.camel.component.mock.MockEndpoint;
 import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;
 
-import java.io.IOException;
-import java.net.URLDecoder;
-import java.net.URLEncoder;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReentrantLock;
+import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * Writes a dummy message and then checks, if the consumer receives at least one message.

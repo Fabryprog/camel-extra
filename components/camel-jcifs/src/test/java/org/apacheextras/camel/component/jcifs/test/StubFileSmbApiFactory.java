@@ -28,12 +28,12 @@ import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apacheextras.camel.component.jcifs.SmbApiFactory;
+
 import jcifs.smb.NtlmPasswordAuthentication;
 import jcifs.smb.SmbException;
 import jcifs.smb.SmbFile;
 import jcifs.smb.SmbFileOutputStream;
-
-import org.apacheextras.camel.component.jcifs.SmbApiFactory;
 
 public class StubFileSmbApiFactory implements SmbApiFactory {
 

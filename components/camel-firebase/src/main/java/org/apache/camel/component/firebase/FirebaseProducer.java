@@ -21,9 +21,6 @@
  ***************************************************************************************/
 package org.apache.camel.component.firebase;
 
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import org.apache.camel.AsyncCallback;
 import org.apache.camel.Exchange;
 import org.apache.camel.Message;
@@ -31,6 +28,10 @@ import org.apache.camel.component.firebase.exception.DatabaseErrorException;
 import org.apache.camel.impl.DefaultAsyncProducer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * The producer, which can be used to set a value for a specific key in Firebase.

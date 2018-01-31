@@ -21,6 +21,8 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.exist;
 
+import java.util.List;
+
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
@@ -28,8 +30,6 @@ import org.apache.camel.test.junit4.CamelTestSupport;
 import org.exist.xmldb.DatabaseImpl;
 import org.junit.Test;
 import org.xmldb.api.DatabaseManager;
-
-import java.util.List;
 
 public class ExistRouteTest extends CamelTestSupport {
     private DatabaseImpl database;

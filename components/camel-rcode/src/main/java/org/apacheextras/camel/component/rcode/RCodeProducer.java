@@ -21,15 +21,15 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.rcode;
 
+import java.util.Map;
+import java.util.Map.Entry;
+
 import org.apache.camel.Exchange;
 import org.apache.camel.Message;
 import org.apache.camel.impl.DefaultProducer;
 import org.rosuda.REngine.REXP;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.Map;
-import java.util.Map.Entry;
 
 public class RCodeProducer extends DefaultProducer {
 

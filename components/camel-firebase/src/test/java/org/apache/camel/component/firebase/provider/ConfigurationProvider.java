@@ -21,7 +21,7 @@
  ***************************************************************************************/
 package org.apache.camel.component.firebase.provider;
 
-import org.apache.camel.component.firebase.FirebaseConfig;
+import static org.junit.Assert.assertNotNull;
 
 import java.io.File;
 import java.io.IOException;
@@ -31,7 +31,7 @@ import java.net.URL;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 
-import static org.junit.Assert.assertNotNull;
+import org.apache.camel.component.firebase.FirebaseConfig;
 
 /**
  * Provides the path of the configuration used to access Firebase.

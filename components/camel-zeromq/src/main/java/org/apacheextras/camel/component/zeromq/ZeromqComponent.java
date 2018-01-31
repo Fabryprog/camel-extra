@@ -23,6 +23,7 @@ package org.apacheextras.camel.component.zeromq;
 
 import java.util.Map;
 
+import org.apache.camel.CamelContext;
 import org.apache.camel.impl.DefaultComponent;
 
 public class ZeromqComponent extends DefaultComponent {

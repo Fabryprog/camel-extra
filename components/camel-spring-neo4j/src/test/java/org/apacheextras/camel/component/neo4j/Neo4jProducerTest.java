@@ -21,6 +21,12 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.neo4j;
 
+import static org.mockito.Matchers.anyMapOf;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+import static org.mockito.MockitoAnnotations.initMocks;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
@@ -28,28 +34,16 @@ import java.util.UUID;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.Message;
-import org.apacheextras.camel.component.neo4j.BasicRelationship;
-import org.apacheextras.camel.component.neo4j.Neo4jEndpoint;
-import org.apacheextras.camel.component.neo4j.Neo4jException;
-import org.apacheextras.camel.component.neo4j.Neo4jOperation;
-import org.apacheextras.camel.component.neo4j.Neo4jProducer;
-import org.apacheextras.camel.component.neo4j.SpringDataRelationship;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.mockito.Mock;
+import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.Node;
 import org.neo4j.graphdb.Relationship;
-import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.factory.GraphDatabaseFactory;
 import org.springframework.data.neo4j.support.DelegatingGraphDatabase;
 import org.springframework.data.neo4j.support.Neo4jTemplate;
-
-import static org.mockito.Matchers.anyMapOf;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-import static org.mockito.MockitoAnnotations.initMocks;
 
 @Ignore
 public class Neo4jProducerTest {

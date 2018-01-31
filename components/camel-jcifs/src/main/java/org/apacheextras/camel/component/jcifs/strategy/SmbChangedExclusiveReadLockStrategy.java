@@ -24,7 +24,6 @@ package org.apacheextras.camel.component.jcifs.strategy;
 import java.util.Date;
 import java.util.List;
 
-import jcifs.smb.SmbFile;
 import org.apache.camel.Exchange;
 import org.apache.camel.LoggingLevel;
 import org.apache.camel.component.file.GenericFile;
@@ -35,6 +34,8 @@ import org.apache.camel.util.CamelLogger;
 import org.apache.camel.util.StopWatch;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import jcifs.smb.SmbFile;
 
 /**
  * @see org.apache.camel.component.file.remote.strategy.SftpChangedExclusiveReadLockStrategy

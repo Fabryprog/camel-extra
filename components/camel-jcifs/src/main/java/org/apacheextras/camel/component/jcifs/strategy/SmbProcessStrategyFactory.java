@@ -23,7 +23,6 @@ package org.apacheextras.camel.component.jcifs.strategy;
 
 import java.util.Map;
 
-import jcifs.smb.SmbFile;
 import org.apache.camel.CamelContext;
 import org.apache.camel.Expression;
 import org.apache.camel.LoggingLevel;
@@ -35,6 +34,8 @@ import org.apache.camel.component.file.strategy.GenericFileNoOpProcessStrategy;
 import org.apache.camel.component.file.strategy.GenericFileRenameExclusiveReadLockStrategy;
 import org.apache.camel.component.file.strategy.GenericFileRenameProcessStrategy;
 import org.apache.camel.util.ObjectHelper;
+
+import jcifs.smb.SmbFile;
 
 /**
  * @see org.apache.camel.component.file.remote.strategy.SftpProcessStrategyFactory

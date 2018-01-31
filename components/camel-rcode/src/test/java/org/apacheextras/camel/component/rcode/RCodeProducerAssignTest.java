@@ -21,6 +21,8 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.rcode;
 
+import static org.mockito.Mockito.doAnswer;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -30,8 +32,6 @@ import org.apache.camel.component.mock.MockEndpoint;
 import org.junit.Test;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
-
-import static org.mockito.Mockito.doAnswer;
 
 public class RCodeProducerAssignTest extends RCodeProducerTest {
 

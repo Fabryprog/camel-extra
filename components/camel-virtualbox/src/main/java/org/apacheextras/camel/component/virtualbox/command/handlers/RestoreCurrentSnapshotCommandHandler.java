@@ -21,6 +21,9 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.virtualbox.command.handlers;
 
+import static org.apacheextras.camel.component.virtualbox.command.MachineAwareVirtualBoxCommand.resolveMachineId;
+import static org.apacheextras.camel.component.virtualbox.command.NoReturnValue.noValue;
+
 import org.apache.camel.Exchange;
 import org.apacheextras.camel.component.virtualbox.command.NoReturnValue;
 import org.apacheextras.camel.component.virtualbox.command.ProgressingVirtualBoxCommandHandler;
@@ -31,9 +34,6 @@ import org.virtualbox_4_2.IConsole;
 import org.virtualbox_4_2.IMachine;
 import org.virtualbox_4_2.IProgress;
 import org.virtualbox_4_2.LockType;
-
-import static org.apacheextras.camel.component.virtualbox.command.MachineAwareVirtualBoxCommand.resolveMachineId;
-import static org.apacheextras.camel.component.virtualbox.command.NoReturnValue.noValue;
 
 public class RestoreCurrentSnapshotCommandHandler extends ProgressingVirtualBoxCommandHandler<RestoreCurrentSnapshotCommand, NoReturnValue> {
 

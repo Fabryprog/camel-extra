@@ -21,12 +21,12 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.hibernate;
 
+import static org.mockito.Mockito.verify;
+
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import static org.mockito.BDDMockito.*;
-
 import org.mockito.Answers;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;

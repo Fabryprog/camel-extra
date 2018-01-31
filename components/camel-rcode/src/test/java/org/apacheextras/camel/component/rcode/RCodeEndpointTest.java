@@ -21,11 +21,11 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.rcode;
 
+import static org.junit.Assert.assertNotNull;
+
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.junit.Test;
-
-import static org.junit.Assert.assertNotNull;
 
 public class RCodeEndpointTest {
 

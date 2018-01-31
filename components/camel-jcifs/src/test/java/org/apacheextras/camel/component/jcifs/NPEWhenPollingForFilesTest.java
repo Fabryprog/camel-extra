@@ -21,10 +21,13 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.jcifs;
 
-import java.io.File;
+import static org.easymock.EasyMock.anyObject;
+import static org.easymock.EasyMock.createMock;
+import static org.easymock.EasyMock.expect;
+import static org.easymock.EasyMock.replay;
+import static org.easymock.EasyMock.verify;
 
-import jcifs.smb.SmbFile;
-import jcifs.smb.SmbFileInputStream;
+import java.io.File;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
@@ -34,11 +37,8 @@ import org.easymock.IAnswer;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.easymock.EasyMock.anyObject;
-import static org.easymock.EasyMock.createMock;
-import static org.easymock.EasyMock.expect;
-import static org.easymock.EasyMock.replay;
-import static org.easymock.EasyMock.verify;
+import jcifs.smb.SmbFile;
+import jcifs.smb.SmbFileInputStream;
 
 /**
  * Unit test to verify behaviour of NPE when it is not from

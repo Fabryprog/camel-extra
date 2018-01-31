@@ -21,15 +21,6 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.virtualbox;
 
-import org.apache.camel.builder.RouteBuilder;
-import org.apache.camel.component.mock.MockEndpoint;
-import org.apache.camel.test.junit4.CamelTestSupport;
-import org.junit.Test;
-import org.virtualbox_4_2.ISnapshot;
-
-import java.util.HashMap;
-import java.util.Map;
-
 import static org.apacheextras.camel.component.virtualbox.MockVirtualBoxManagerFactory.BIOS_SETTINGS;
 import static org.apacheextras.camel.component.virtualbox.MockVirtualBoxManagerFactory.CONSOLE;
 import static org.apacheextras.camel.component.virtualbox.MockVirtualBoxManagerFactory.MACHINE;
@@ -45,6 +36,15 @@ import static org.mockito.Matchers.anyInt;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.verify;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.apache.camel.builder.RouteBuilder;
+import org.apache.camel.component.mock.MockEndpoint;
+import org.apache.camel.test.junit4.CamelTestSupport;
+import org.junit.Test;
+import org.virtualbox_4_2.ISnapshot;
 
 public class VirtualBoxCommandsTest extends CamelTestSupport {
 

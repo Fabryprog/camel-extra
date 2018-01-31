@@ -21,12 +21,17 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.virtualbox;
 
+import static org.mockito.Matchers.any;
+import static org.mockito.Mockito.RETURNS_DEEP_STUBS;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+import static org.virtualbox_4_2.SessionState.Locked;
+
 import org.apacheextras.camel.component.virtualbox.template.VirtualBoxManagerFactory;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mockito;
 import org.virtualbox_4_2.IBIOSSettings;
 import org.virtualbox_4_2.IConsole;
-import org.virtualbox_4_2.IEventListener;
 import org.virtualbox_4_2.IEventSource;
 import org.virtualbox_4_2.IMachine;
 import org.virtualbox_4_2.IProgress;
@@ -35,13 +40,6 @@ import org.virtualbox_4_2.ISnapshot;
 import org.virtualbox_4_2.IVirtualBox;
 import org.virtualbox_4_2.MachineState;
 import org.virtualbox_4_2.VirtualBoxManager;
-
-import static org.mockito.Matchers.any;
-import static org.mockito.Matchers.anyInt;
-import static org.mockito.Mockito.RETURNS_DEEP_STUBS;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
-import static org.virtualbox_4_2.SessionState.Locked;
 
 public class MockVirtualBoxManagerFactory implements VirtualBoxManagerFactory {
 

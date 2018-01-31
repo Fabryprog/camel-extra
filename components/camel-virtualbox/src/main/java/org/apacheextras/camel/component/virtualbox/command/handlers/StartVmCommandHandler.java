@@ -21,15 +21,15 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.virtualbox.command.handlers;
 
+import static org.apacheextras.camel.component.virtualbox.command.MachineAwareVirtualBoxCommand.resolveMachineId;
+import static org.apacheextras.camel.component.virtualbox.command.NoReturnValue.noValue;
+
 import org.apache.camel.Exchange;
 import org.apacheextras.camel.component.virtualbox.command.NoReturnValue;
 import org.apacheextras.camel.component.virtualbox.command.VirtualBoxCommandHandler;
 import org.apacheextras.camel.component.virtualbox.template.VirtualBoxManagerCallback;
 import org.apacheextras.camel.component.virtualbox.template.VirtualBoxTemplate;
 import org.virtualbox_4_2.VirtualBoxManager;
-
-import static org.apacheextras.camel.component.virtualbox.command.MachineAwareVirtualBoxCommand.resolveMachineId;
-import static org.apacheextras.camel.component.virtualbox.command.NoReturnValue.noValue;
 
 public class StartVmCommandHandler extends VirtualBoxCommandHandler<StartVmCommand, NoReturnValue> {
 

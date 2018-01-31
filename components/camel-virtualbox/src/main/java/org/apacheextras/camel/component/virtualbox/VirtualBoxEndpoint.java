@@ -21,6 +21,8 @@
  ***************************************************************************************/
 package org.apacheextras.camel.component.virtualbox;
 
+import static org.slf4j.LoggerFactory.getLogger;
+
 import org.apache.camel.Processor;
 import org.apache.camel.impl.DefaultEndpoint;
 import org.apache.camel.spi.Injector;
@@ -35,8 +37,6 @@ import org.apacheextras.camel.component.virtualbox.template.VirtualBoxManagerFac
 import org.apacheextras.camel.component.virtualbox.template.VirtualBoxTemplate;
 import org.apacheextras.camel.component.virtualbox.template.WebServiceVirtualBoxManagerFactory;
 import org.slf4j.Logger;
-
-import static org.slf4j.LoggerFactory.getLogger;
 
 @UriEndpoint(scheme = "virtualbox", title = "VirtuaBox", syntax = "virtualbox:machine[?options]", consumerClass = VirtualBoxConsumer.class)
 public class VirtualBoxEndpoint extends DefaultEndpoint {
