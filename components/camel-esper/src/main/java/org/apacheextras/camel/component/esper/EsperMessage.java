@@ -22,8 +22,10 @@
  */
 package org.apacheextras.camel.component.esper;
 
-import com.espertech.esper.client.EventBean;
+import org.apache.camel.CamelContext;
 import org.apache.camel.impl.DefaultMessage;
+
+import com.espertech.esper.client.EventBean;
 
 /**
  * {@inheritDoc} Class EsperMessage wraps two EventBeans into a single
@@ -40,8 +42,10 @@ public class EsperMessage extends DefaultMessage {
      * @param newEvent EventBean
      * @param oldEvent EventBean
      */
-    public EsperMessage(EventBean newEvent, EventBean oldEvent) {
-        this.newEvent = newEvent;
+    public EsperMessage(CamelContext camelContext, EventBean newEvent, EventBean oldEvent) {
+    	super(camelContext);
+        
+    	this.newEvent = newEvent;
         this.oldEvent = oldEvent;
         // use new event as the default body
         setBody(newEvent);
@@ -72,6 +76,6 @@ public class EsperMessage extends DefaultMessage {
      */
     @Override
     public DefaultMessage newInstance() {
-        return new EsperMessage(newEvent, oldEvent);
+        return new EsperMessage(super.getCamelContext(), newEvent, oldEvent);
     }
 }
