@@ -27,7 +27,17 @@ import org.apache.camel.impl.DefaultComponent;
 
 public class ZeromqComponent extends DefaultComponent {
 
-    @Override
+    //added from camel-2.20.x
+    public ZeromqComponent() {
+    	this(null);
+	}
+
+	public ZeromqComponent(CamelContext context) {
+		super(context);
+	}
+
+	
+	@Override
     protected ZeromqEndpoint createEndpoint(String uri, String remaining, Map<String, Object> params) throws Exception {
         ZeromqEndpoint e = new ZeromqEndpoint(uri, remaining, this);
         setProperties(e, params);

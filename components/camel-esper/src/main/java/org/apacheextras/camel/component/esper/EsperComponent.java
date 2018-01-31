@@ -29,6 +29,7 @@ import com.espertech.esper.client.EPRuntime;
 import com.espertech.esper.client.EPServiceProvider;
 import com.espertech.esper.client.EPServiceProviderManager;
 
+import org.apache.camel.CamelContext;
 import org.apache.camel.Endpoint;
 import org.apache.camel.impl.DefaultComponent;
 
@@ -49,6 +50,15 @@ public class EsperComponent extends DefaultComponent {
      */
     private EPRuntime esperRuntime;
 
+    //added from camel-2.20.x
+    public EsperComponent() {
+    	super(null);
+	}
+
+	public EsperComponent(CamelContext context) {
+		super(context);
+	}
+    
     /**
      * Creates an Esper endpoint. {@inheritDoc}
      *

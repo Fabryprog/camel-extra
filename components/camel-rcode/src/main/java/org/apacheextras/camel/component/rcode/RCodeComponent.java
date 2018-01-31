@@ -37,7 +37,16 @@ public class RCodeComponent extends DefaultComponent {
      */
     private RCodeConfiguration configuration;
 
-    /**
+    //added from camel-2.20.x
+    public RCodeComponent() {
+    	this(null);
+	}
+
+	public RCodeComponent(CamelContext context) {
+		super(context);
+	}
+	
+	/**
      * Creates an endpoint instance by checking the configuration parameters.
      *
      * @param uri String

@@ -35,7 +35,7 @@ public class SmbComponent extends GenericFileComponent<SmbFile> {
     private SmbApiFactory smbApiFactory;
 
     public SmbComponent() {
-
+    	this(null);
     }
 
     public SmbComponent(CamelContext context) {

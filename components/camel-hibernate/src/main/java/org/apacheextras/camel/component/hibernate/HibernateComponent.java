@@ -35,7 +35,16 @@ public class HibernateComponent extends DefaultComponent {
     private SessionFactory sessionFactory;
     private TransactionStrategy transactionStrategy;
 
-    @Override
+    //added from camel-2.20.x
+    public HibernateComponent() {
+    	this(null);
+	}
+
+	public HibernateComponent(CamelContext context) {
+		super(context);
+	}
+	
+	@Override
     protected void doStart() throws Exception {
         super.doStart();
         if (transactionStrategy == null) {

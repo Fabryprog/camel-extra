@@ -34,7 +34,16 @@ public class ExistComponent extends DefaultComponent {
     private String username;
     private String password;
 
-    @Override
+    //added from camel-2.20.x
+    public ExistComponent() {
+    	this(null);
+	}
+
+	public ExistComponent(CamelContext context) {
+		super(context);
+	}
+
+	@Override
     protected Endpoint createEndpoint(String uri, String remaining, Map parameters) throws Exception {
         Collection collection;
         if (database != null) {

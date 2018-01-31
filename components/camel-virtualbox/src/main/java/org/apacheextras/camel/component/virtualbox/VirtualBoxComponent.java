@@ -44,7 +44,16 @@ public class VirtualBoxComponent extends DefaultComponent {
 
     private String password;
 
-    @Override
+    //added from camel-2.20.x
+    public VirtualBoxComponent() {
+    	this(null);
+	}
+
+	public VirtualBoxComponent(CamelContext context) {
+		super(context);
+	}
+	
+	@Override
     protected VirtualBoxEndpoint createEndpoint(String uri, String remaining, Map<String, Object> parameters) throws Exception {
         String resolvedMachineId = machineId = (machineId != null ? machineId : remaining);
         return new VirtualBoxEndpoint(uri, this, virtualBoxTemplate, commandHandlersManager, resolvedMachineId, vboxManagerFactoryClass, url, username, password);

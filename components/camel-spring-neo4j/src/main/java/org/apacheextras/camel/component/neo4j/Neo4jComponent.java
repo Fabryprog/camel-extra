@@ -30,6 +30,7 @@ import org.apache.camel.impl.DefaultComponent;
 public class Neo4jComponent extends DefaultComponent {
 
     public Neo4jComponent() {
+    	this(null);
     }
 
     public Neo4jComponent(CamelContext context) {
